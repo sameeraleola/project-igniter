@@ -17,7 +17,7 @@ A dormant project is not a dead project. It is an unlit one.
 | Component | Purpose |
 |---|---|
 | **Project Registry** | YAML-based record of every project in any state |
-| **Dashboard** | GitHub Pages status view with Ignite actions |
+| **Dashboard** | Cloudflare Pages status view with Ignite actions |
 | **Ignition Workflow** | GitHub Actions workflow that scaffolds a project from dormant to active |
 | **Scaffold Output** | Baseline artifacts every ignited project receives |
 
@@ -27,10 +27,12 @@ A dormant project is not a dead project. It is an unlit one.
 
 | Layer | Technology |
 |---|---|
-| Frontend | GitHub Pages (static site) |
+| Frontend | Cloudflare Pages |
+| Landing Pages | ClickFunnels (mounted via Cloudflare) |
+| Authentication | Cloudflare Access (Zero Trust) |
 | Data Store | YAML registry committed to this repository |
 | Workflow Engine | GitHub Actions |
-| DNS and SSL | Cloudflare |
+| Domain | sameeraleola.dev/project-igniter/ |
 
 Full architectural reasoning is documented in [ADR-0001](docs/adr/ADR-0001-github-native-architecture.md).
 
@@ -53,9 +55,19 @@ project-igniter/
 
 ---
 
+## Build Log
+
+Every session is documented in the public build log. It captures decisions made, artifacts built, and what comes next.
+
+[Project Igniter — Build Log](https://gist.github.com/sameeraleola/1828a42806a0143bfb5cc1fab029c4fd)
+
+---
+
 ## Status
 
-Active build. See [projects/registry.yaml](projects/registry.yaml) for current project states.
+Active build — v0.1 UI Definition in progress. Target: June 3, 2026.
+
+See [projects/registry.yaml](projects/registry.yaml) for current project states.
 
 ---
 
