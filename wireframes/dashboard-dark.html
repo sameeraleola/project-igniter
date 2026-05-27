@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-zinc-950 text-zinc-100">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project Igniter</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@300;400;500;600&display=swap');
+    body { font-family: 'Inter', sans-serif; }
+    .mono { font-family: 'JetBrains Mono', monospace; }
+    .card-hover:hover .card-detail { display: block; }
+    .card-detail { display: none; }
+  </style>
+</head>
+<body class="min-h-screen">
+  <nav class="border-b border-zinc-800 px-6 py-3 flex items-center justify-between">
+    <span class="mono text-sm font-bold text-violet-400">&#11041; project igniter</span>
+    <div class="flex items-center gap-6 text-xs text-zinc-500">
+      <a href="#" class="hover:text-zinc-200 transition-colors">projects</a>
+      <a href="#" class="hover:text-zinc-200 transition-colors">decisions</a>
+      <a href="#" class="hover:text-zinc-200 transition-colors">scaffold</a>
+      <a href="#" class="hover:text-zinc-200 transition-colors">docs</a>
+    </div>
+  </nav>
+  <main class="max-w-3xl mx-auto px-6 py-12">
+    <div class="mb-8">
+      <h1 class="mono text-xl font-bold text-zinc-100">
+        <span class="text-violet-400">&#955;</span>project igniter
+      </h1>
+      <p class="text-sm text-zinc-500 mt-1">Your project scaffold. From idea to structure in one session.</p>
+    </div>
+    <div class="mb-10">
+      <div class="flex items-center gap-3 bg-zinc-900 border border-zinc-700 rounded-lg px-4 py-3 text-sm text-zinc-500 cursor-pointer hover:border-violet-500 transition-colors group">
+        <span class="mono text-violet-400">.ignite</span>
+        <span class="text-zinc-600">&#8250;</span>
+        <span class="group-hover:text-zinc-300 transition-colors">Search projects, /new, /adr, /scaffold...</span>
+        <span class="ml-auto mono text-xs bg-zinc-800 px-2 py-0.5 rounded text-zinc-600">&#8984;K</span>
+      </div>
+    </div>
+    <div class="mb-10 flex items-center gap-10 text-sm border-b border-zinc-800 pb-6">
+      <div><div class="mono text-2xl font-bold text-zinc-100">12</div><div class="text-xs text-zinc-500 mt-0.5">projects</div></div>
+      <div><div class="mono text-2xl font-bold text-zinc-100">4</div><div class="text-xs text-zinc-500 mt-0.5">milestones open</div></div>
+      <div><div class="mono text-2xl font-bold text-zinc-100">38</div><div class="text-xs text-zinc-500 mt-0.5">decisions logged</div></div>
+      <div><div class="mono text-2xl font-bold text-zinc-100">6</div><div class="text-xs text-zinc-500 mt-0.5">scaffolds generated</div></div>
+    </div>
+    <div class="mb-4 flex items-center gap-2 text-xs text-zinc-500">
+      <span class="text-violet-400">&#8627;</span><span>latest project</span>
+    </div>
+    <div class="space-y-0 divide-y divide-zinc-800/60">
+      <div class="card-hover py-6 cursor-pointer group">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <div class="text-xs mono text-zinc-500 mb-1">2026-05-27</div>
+            <h2 class="text-base font-semibold text-zinc-100 group-hover:text-violet-300 transition-colors">Filogico — Adaptive Mastery Platform</h2>
+          </div>
+          <span class="text-xs mono bg-emerald-900/40 text-emerald-400 border border-emerald-800 px-2 py-0.5 rounded-full">active</span>
+        </div>
+        <div class="space-y-1.5 mb-4">
+          <div class="flex gap-2 text-sm text-zinc-400"><span class="text-zinc-600 shrink-0">·</span><span><strong class="text-zinc-300">Phase 2 — Feedback Subsystems.</strong> MetaTrace telemetry layer scaffolded. FluentTest evaluation framework in design.</span></div>
+          <div class="flex gap-2 text-sm text-zinc-400"><span class="text-zinc-600 shrink-0">·</span><span><strong class="text-zinc-300">UI-First in Progress.</strong> Dashboard wireframe being validated before any backend contracts are written.</span></div>
+          <div class="flex gap-2 text-sm text-zinc-400"><span class="text-zinc-600 shrink-0">·</span><span><strong class="text-zinc-300">3 Open Decisions.</strong> Event mesh topology, mastery scoring algorithm, and Syntropy observability data model.</span></div>
+          <div class="flex gap-2 text-sm text-zinc-400"><span class="text-zinc-600 shrink-0">·</span><span><strong class="text-zinc-300">Stack Locked.</strong> Next.js 15, FastAPI, PostgreSQL, Redis, event-driven via NATS.</span></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5 mb-3">
+          <span class="mono text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded">Next.js</span>
+          <span class="mono text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded">FastAPI</span>
+          <span class="mono text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded">PostgreSQL</span>
+          <span class="mono text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded">NATS</span>
+          <span class="mono text-xs bg-zinc-700 text-zinc-500 px-2 py-0.5 rounded">+4 more</span>
+        </div>
+        <div class="flex items-center gap-4 text-xs mono text-zinc-600">
+          <span>6 milestones</span><span>·</span><span>14 decisions</span><span>·</span><span>3 scaffolds</span><span>·</span><span>phase 2 of 5</span>
+        </div>
+        <div class="card-detail mt-4 pt-4 border-t border-zinc-800">
+          <div class="text-xs text-zinc-600 mono mb-2">recent activity</div>
+          <div class="space-y-1">
+            <div class="text-xs text-zinc-500 flex gap-2"><span class="text-zinc-700">2026-05-27</span><span>ADR-007 drafted: Event mesh topology decision between NATS and Kafka</span></div>
+            <div class="text-xs text-zinc-500 flex gap-2"><span class="text-zinc-700">2026-05-26</span><span>Scaffold: MetaTrace telemetry module generated and committed</span></div>
+            <div class="text-xs text-zinc-500 flex gap-2"><span class="text-zinc-700">2026-05-24</span><span>Milestone M4 closed: Feedback subsystems architecture complete</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="card-hover py-6 cursor-pointer group">
+        <div class="flex items-start justify-between mb-3">
+          <div>
+            <div class="text-xs mono text-zinc-500 mb-1">2026-05-20</div>
+            <h2 class="text-base font-semibold text-zinc-100 group-hover:text-violet-300 transition-colors">Project Igniter — Build Log Dashboard</h2>
+          </div>
+          <span class="text-xs mono bg-amber-900/40 text-amber-400 border border-amber-800 px-2 py-0.5 rounded-full">planning</span>
+        </div>
+        <div class="space-y-1.5 mb-4">
+          <div class="flex gap-2 text-sm text-zinc-400"><span class="text-zinc-600 shrink-0">·</span><span><strong class="text-zinc-300">UI Wireframe Phase.</strong> Inspired by Agent Brief layout. Dashboard and detail page being defined.</span></div>
+          <div class="flex gap-2 text-sm text-zinc-400"><span class="text-zinc-600 shrink-0">·</span><span><strong class="text-zinc-300">No Backend Yet.</strong> Frontend defines the data contract. API design follows the UI.</span></div>
+        </div>
+        <div class="flex flex-wrap gap-1.5 mb-3">
+          <span class="mono text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded">React</span>
+          <span class="mono text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded">Tailwind</span>
+          <span class="mono text-xs bg-zinc-800 text-zinc-400 px-2 py-0.5 rounded">Wireframe</span>
+        </div>
+        <div class="flex items-center gap-4 text-xs mono text-zinc-600">
+          <span>1 milestone</span><span>·</span><span>2 decisions</span><span>·</span><span>0 scaffolds</span><span>·</span><span>phase 1 of 5</span>
+        </div>
+      </div>
+      <div class="py-4 flex items-center gap-3 text-xs mono text-zinc-600">
+        <span>&#8759;</span><span>archive</span><span class="text-zinc-700">— hover cards for detail, click to open</span>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
