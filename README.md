@@ -73,4 +73,4 @@ See [projects/registry.yaml](projects/registry.yaml) for current project states.
 
 ## Built By
 
-[Sameera Leola](https://github.com/sameeraleola) — part of the Filogico ecosystem.
+[Sameera Leola](https://github.com/sameeraleola) using the [MarketSecrets.ai](https://www.getaisecrets.com/) platform.
