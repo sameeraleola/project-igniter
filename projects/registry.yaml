@@ -1,0 +1,82 @@
+# Project Igniter — Dormant Project Registry
+# Schema version: 1.0
+# Each entry follows the standard project record schema.
+# Valid statuses: dormant | active | on_hold | complete
+
+projects:
+
+  - id: project-igniter
+    name: Project Igniter
+    description: >-
+      A structured ignition and scaffolding system that transforms dormant project
+      ideas into active, documented, and repository-ready builds through a
+      GitHub-native workflow.
+    status: active
+    why_it_matters: >-
+      Structure before momentum. Without a project management framework underneath
+      the work, decisions and architectural notes live scattered. Project Igniter
+      is the scaffolding for everything else.
+    rough_scope: GitHub Pages dashboard, YAML registry, GitHub Actions ignition workflow
+    known_dependencies:
+      - GitHub Pages
+      - GitHub Actions
+      - Cloudflare DNS
+    reason_for_dormancy: null
+    stack:
+      - GitHub Pages
+      - GitHub Actions
+      - YAML
+      - Cloudflare
+    ignited_at: "2026-05-27"
+    repository: https://github.com/sameeraleola/project-igniter
+
+  - id: filogico-synthetic-data-tool
+    name: Filogico Synthetic Data Tool
+    description: >-
+      A tool for generating synthetic learner data to power Filogico's
+      adaptive mastery intelligence engine (Fluid8) during development
+      and testing before real learner data exists.
+    status: dormant
+    why_it_matters: >-
+      Filogico's adaptive systems cannot be built and tested without data.
+      Synthetic data is the unlock that lets development proceed in parallel
+      with platform growth.
+    rough_scope: FastAPI backend, configurable learner profile generators, event stream simulation
+    known_dependencies:
+      - filogico
+      - Fluid8
+      - MetaTrace
+    reason_for_dormancy: Awaiting Project Igniter ignition workflow to activate
+    stack:
+      - Python
+      - FastAPI
+      - Pydantic
+    ignited_at: null
+    repository: null
+
+  - id: filogico
+    name: Filogico
+    description: >-
+      An AI-augmented mastery and transformation platform combining adaptive
+      learning intelligence, event-driven feedback systems, agentic orchestration,
+      and mastery-based progression. Not a course platform. A cognitive learning
+      ecosystem.
+    status: dormant
+    why_it_matters: >-
+      The primary long-term vision project. Everything else being built is either
+      infrastructure for Filogico or proof-of-concept for Filogico's philosophy.
+    rough_scope: Full platform — MetaTrace, Fluid8, Syntropy, FluentTest, content delivery, mentorship
+    known_dependencies:
+      - project-igniter
+      - filogico-synthetic-data-tool
+    reason_for_dormancy: >-
+      Large scope requiring foundational infrastructure first. Will be ignited
+      systematically after Project Igniter and the Synthetic Data Tool are active.
+    stack:
+      - Python
+      - FastAPI
+      - PostgreSQL
+      - Redis
+      - GitHub Actions
+    ignited_at: null
+    repository: https://github.com/sameeraleola/filogico

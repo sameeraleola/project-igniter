@@ -1,0 +1,31 @@
+# Project Igniter .gitignore
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (for future FastAPI migration)
+__pycache__/
+*.py[cod]
+.env
+venv/
+.venv/
+dist/
+build/
+*.egg-info/
+
+# Node (for any future dashboard tooling)
+node_modules/
+.next/
+
+# Logs
+*.log
+
+# Local config overrides
+*.local

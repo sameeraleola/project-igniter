@@ -1,0 +1,36 @@
+# Project Igniter — Ignition Workflow
+# Status: scaffold placeholder (not yet active)
+#
+# This workflow will be triggered manually to ignite a dormant project.
+# On trigger it will:
+#   1. Read the target project from the registry
+#   2. Update its status from dormant -> active
+#   3. Generate baseline scaffold artifacts
+#   4. Open a GitHub Issue with the ignition checklist
+#   5. Commit the updated registry back to main
+#
+# Build phase: not yet implemented.
+# See docs/adr/ADR-0001-github-native-architecture.md for workflow design rationale.
+
+name: Ignite Project
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_id:
+        description: 'Project ID to ignite (must exist in projects/registry.yaml)'
+        required: true
+        type: string
+
+jobs:
+  ignite:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Placeholder — ignition logic coming in next build phase
+        run: |
+          echo "Target project: ${{ github.event.inputs.project_id }}"
+          echo "Ignition workflow not yet implemented."
+          echo "See docs/adr/ADR-0001-github-native-architecture.md"
